@@ -17,6 +17,7 @@
  */
 
 import info.gridworld.actor.ActorWorld;
+import info.gridworld.actor.Bug;
 import info.gridworld.grid.Location;
 
 import java.awt.Color;
@@ -35,6 +36,16 @@ public class BoxBugRunner
         BoxBug bob = new BoxBug(3);
         world.add(new Location(7, 8), alice);
         world.add(new Location(5, 5), bob);
+        Bug bb = new Bug();
+        
+        Dragonfly dr = new Dragonfly(Color.BLUE);
+        world.add(new Location(2, 5), dr);
+        
+        Dragonfly dr2 = new Dragonfly();
+        world.add(new Location(2, 5), dr2);
+        
+     //   world.add(new Location(2, 5), bb);
+        bb.setColor(Color.YELLOW);
         world.show();
     }
 }
