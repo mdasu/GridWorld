@@ -24,7 +24,7 @@ public class Dragonfly extends Bug {
 	public void act() {
 		if (canMove()) {
 			move();			
-		}
+		} else 
 		turn();
 	}
 	
